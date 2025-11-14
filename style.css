@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(26, 66%, 93%);
+    display: flex;
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'DM sans' , sans-serif;
+}
+main{
+    width: 30%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(10, 79%, 65%);
+    padding: 20px;
+    border-radius: 25px;
+    color: hsl(26, 66%, 93%);
+}
+.first-section{
+    margin-top: 20px;
+    background-color: white ;
+    border-radius: 25px;
+}
+h2{
+    padding-top: 20px;
+    margin-left: 10px;
+    color: hsl(25, 47%, 15%);
+}
+article{
+    
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+    height: 200px;
+   align-items: flex-end;
+  margin-top: 20px;
+   }
+.tooltip {
+  position: absolute;
+top: 0;
+transform: translate(-50%, calc(-100% - 8px));
+left: 50%;
+background-color: hsl(25, 47%, 15%);
+color: white;
+  padding: 6px 7px;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  opacity: 0;  /* Hidden by default */
+  pointer-events: none;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+  z-index: 2000;
+}
+.tooltip.visible {
+  opacity: 1;  /* Show when this class is added */
+}
+article > div{
+    /*the bar container*/
+  
+  display: flex;
+  justify-content:flex-end;
+  flex-direction: column;
+  align-items:center;
+  color: hsl(28, 10%, 53%);
+  gap: 8px;
+ font-size: 0.8rem;
+ height: 100%;
+ z-index: 10;
+}
+article > div > div{
+  /* The bar itself */
+   position: relative;
+  width: 40px;
+ border-radius: 4px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+z-index: 0;
+}
+article > div > div:hover{
+filter:brightness(1.3);
+}
+article > div:nth-child(1) > div { 
+    /* height: 50px; */
+    background-color: hsl(10, 79%, 65%);
+ }
+article > div:nth-child(2) > div { 
+    /* height: 90px; */
+background-color: hsl(10, 79%, 65%);;
+ }
+article > div:nth-child(3) > div { 
+    /* height: 120px; */
+    background-color: hsl(186, 34%, 65%);
+ }
+ article > div:nth-child(4) > div { 
+    /* height: 70px; */
+    background-color: hsl(10, 79%, 65%);
+ }
+article > div:nth-child(5) > div { 
+    /* height: 60px; */
+    background-color: hsl(10, 79%, 65%);
+ }
+article > div:nth-child(6) > div { 
+    /* height: 100px; */
+    background-color: hsl(10, 79%, 65%);
+ }
+article > div:nth-child(7) > div { 
+    /* height: 70px; */
+    background-color: hsl(10, 79%, 65%);
+ }
+section > div:nth-of-type(1){ 
+ /*the total figure container*/
+display: flex;
+justify-content: center;
+align-items: flex-end;
+margin: 0 15px;
+gap: 150px;
+border-top: 2px solid hsl(26, 66%, 93%);
+margin-top: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+section > div:nth-of-type(1) > div:nth-child(1) > h3{
+     /*first h3 in the total container*/ 
+    font-size:1.7rem;
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+}
+section > div:nth-of-type(1) > div:nth-child(1) > p{ 
+    /*first p in the total container*/
+    font-size:0.7rem;
+    font-weight: 400;
+    color: hsl(28, 10%, 53%);
+}
+section > div:nth-of-type(1) > div:nth-child(2) > h3{ 
+    /*second h3 in the total container*/
+    font-size:0.9rem;
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+    text-align: end;
+}
+section > div:nth-of-type(1) > div:nth-child(2) > p{ 
+   /*second p in the total container*/
+    font-size:0.7rem;
+    font-weight: 400;
+    color: hsl(28, 10%, 53%);
+}
+
+    .attribution { font-size: 11px; text-align: center; margin-top: 20px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @media (max-width:768px){
+main {
+    width: 50%;
+}
+    }
+      @media (max-width:426px){
+main {
+    width: 90%;
+}
+
+article > div > div {
+    width: 30px;
+}
+section > div:nth-of-type(1) {
+    gap: 160px;
+  }
+  
+    }
+    @media (max-width:376px){
+        section > div:nth-of-type(1) {
+    gap: 110px;
+  }
+     }
+     @media (max-width:321px){
+        section > div:nth-of-type(1) {
+    gap: 70px;
+  }
+  .tooltip{
+  padding: 5px 6px;}
+     }
